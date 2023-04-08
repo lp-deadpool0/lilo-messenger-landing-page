@@ -1,0 +1,19 @@
+@mixin conatiner {
+  max-width: 1190px;
+  width: 100%;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.container {
+  @include conatiner;
+  margin: 145px auto;
+}
+
+.container-without-margin_centered {
+  @include conatiner;
+  margin: 0 auto;
+}
+.container-without-margin {
+  @include conatiner;
+  margin: 0;
+}

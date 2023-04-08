@@ -1,0 +1,30 @@
+.app {
+  background: rgba(156, 156, 156, 0.2);
+  padding: 50px 0px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    .liloLogo {
+      transform: scale(2);
+    }
+  }
+}
+
+.app__title {
+  color: #ffffff;
+  max-width: 880px;
+}
+
+.liloLogo {
+  position: absolute;
+  width: 347px;
+  height: 331px;
+  bottom: 38px;
+  right: -85px;
+  z-index: 2;
+  background-image: url("/images/bgImages/logo_icon.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  transition: 0.5s;
+}

@@ -1,0 +1,110 @@
+.hero {
+  width: 100%;
+
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 999;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: calc(30px + 30 * (100vw / 1170));
+  line-height: calc(37px + 33 * (100vw / 1170));
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.hero__subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+}
+.hero__btn {
+  border-radius: 10px;
+  padding: 18px 35px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #ffb802;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+
+  span {
+    z-index: 10;
+    position: relative;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -9rem;
+    left: -9rem;
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(45deg);
+    background: #ffb802;
+    transition: 0.6s;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
+    &::before {
+      transform: rotate(45deg) scale(5);
+    }
+  }
+}
+
+@mixin bg-lights {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  filter: blur(250px);
+  width: 100%;
+  height: 100%;
+}
+
+.bg-lights-1 {
+  @include bg-lights;
+  top: 38px;
+  left: -313px;
+  width: 372.5px;
+  height: 572px;
+  background-image: url("/images/bgImages/bg_lights_1.svg");
+  animation: bg-lights-rotate 10s ease-in-out infinite;
+}
+.bg-lights-2 {
+  @include bg-lights;
+  width: 390px;
+  height: 643px;
+  top: -153px;
+  right: -422px;
+  background-image: url("/images/bgImages/bg_lights_2.svg");
+  animation: bg-lights-rotate 10s ease-in-out infinite;
+}
+
+@keyframes bg-lights-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
