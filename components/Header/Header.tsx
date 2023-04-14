@@ -31,6 +31,11 @@ export const Header = () => {
             </a>
           </nav>
 
+          <button className={styles.header__menu_btn}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <YellowButton title="Войти" className={styles.header__btn} />
         </div>
       </Container>

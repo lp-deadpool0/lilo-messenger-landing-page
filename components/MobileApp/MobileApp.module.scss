@@ -13,7 +13,7 @@
 
 .app__title {
   color: #ffffff;
-  max-width: 880px;
+  max-width: 800px;
 }
 
 .liloLogo {
@@ -27,4 +27,10 @@
   background-repeat: no-repeat;
   background-position: bottom left;
   transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+  .app__title {
+    max-width: 700px;
+  }
 }

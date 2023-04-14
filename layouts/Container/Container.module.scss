@@ -17,3 +17,14 @@
   @include conatiner;
   margin: 0;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 125px auto;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 95px auto;
+  }
+}

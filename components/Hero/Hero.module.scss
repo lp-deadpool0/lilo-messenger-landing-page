@@ -108,3 +108,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 475px) {
+  .hero__title {
+    font-size: 37px;
+    line-height: normal;
+  }
+}

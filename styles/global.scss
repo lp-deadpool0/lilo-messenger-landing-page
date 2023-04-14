@@ -23,7 +23,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
-  line-height: 61px;
+  line-height: normal;
   color: $accent-color;
 }
 
@@ -34,8 +34,19 @@ body {
   line-height: 24px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .primary_text {
     font-size: 17px;
+  }
+  .h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 375px) {
+  .primary_text {
+    font-size: 16px;
+  }
+  .h2 {
+    font-size: 25px;
   }
 }

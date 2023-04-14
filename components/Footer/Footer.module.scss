@@ -66,3 +66,19 @@
   height: 440.1px;
   background-image: url("/images/bgImages/bg_lights_3.svg");
 }
+
+@media (max-width: 575px) {
+  .footer__body {
+    justify-content: center;
+    align-content: inherit;
+  }
+  .footer__media_links {
+    gap: 30px;
+  }
+  .footer__email {
+    display: none;
+  }
+  .footer__logo {
+    display: none;
+  }
+}

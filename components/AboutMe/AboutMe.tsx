@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "./aboutMe.module.scss";
+import styles from "./AboutMe.module.scss";
 import Image from "next/image";
 import coderImg from "../../public/images/coder.png";
 import { Container, СontainerVariant } from "@/layouts/Container/Container";
